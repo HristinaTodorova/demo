@@ -89,7 +89,7 @@
                 },
                 "button": {
                     "type": "object",
-                    "$ref": "http://schema.cms.amplience.com/{{link.id}}",
+                    "$ref": "http://dev02-eu01-tempur.demandware.net/s/MobileFirst/home?lang=default",
                     "_semanticType": "http://semantic-type.cms.amplience.com/content",
                     "_interpolate": true,
                     "_label": {
