@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "id": "http://schema.cms.amplience.com/{{self.id}}",
+  "meta": {
+    "name": "Hello World",
+    "description": "Hello World schema to show a textual example",
+    "icons": [
+      {
+        "size": 256,
+        "url": "http://x1.adis.ws/t/playground/placeholder?width=128&height=128&title=Hello%20World&background=rgba(255,255,255,0)&color=rgba(20,20,20,0.8)&size=20"
+      }
+    ],
+    "card": {
+      "uri": "//apps.dev-artifacts.adis.ws/cms-cards/master/latest/text/index.html",
+      "mapping": {
+        "headline": "/text"
+      }
+    },
+    "context": "http://context.cms.amplience.com/{{self.context.id}}"
+  },
+  "allOf": [
+    {
+      "$ref": "#/definitions/self"
+    },
+    {
+      "$ref": "http://schema.system.amplience.com/v0.0/content-base"
+    }
+  ],
+  "definitions": {
+    "self": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "maxLength": 256,
+          "_label": {
+            "value": "Text",
+            "hint": "Text for this schema"
+          },
+          "_semanticType": "http://semantic-type.cms.amplience.com/text"
+        }
+      }
+    }
+  }
+} 
